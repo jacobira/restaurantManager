@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -14,7 +15,7 @@ import { OrderDataService } from './services/order-data.service';
 
 import { RouterModule, Routes } from '@angular/router';
 
-const appRoutes = [
+const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'kitchen', component: KitchenComponent },
   {path: 'order-entry', component: OrderEntryComponent},
@@ -34,6 +35,7 @@ const appRoutes = [
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
@@ -42,4 +44,5 @@ const appRoutes = [
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

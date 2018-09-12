@@ -1,14 +1,13 @@
 import { Injectable } from '@angular/core';
 import { OrderInt } from '../interfaces/order-int';
 import { ItemInt } from '../interfaces/item-int';
-import { HttpService } from '../services/http.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class OrderDataService {
 
-  constructor(private _http: HttpService) {}
+  constructor() {}
 
   currDate: number;
   orderCount: number = 1;
