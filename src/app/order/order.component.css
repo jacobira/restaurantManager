@@ -2,4 +2,5 @@
     width: 200px;
     min-height: 200px;
     background-color: lightgray;
+    border-radius: 5px;
 }

@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="orderDisplay" >
-    <app-order></app-order>
+  <div class="orderDisplay" *ngFor="let order of orders">
+    <app-order [orderNum]="order.orderNum" [items]="order.items"></app-order>
   </div>
 </div>

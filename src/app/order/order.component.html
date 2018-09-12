@@ -1,8 +1,21 @@
 <div class="orderBox">
+
   <div class="info">
-
+    Order {{orderNum}}
   </div>
+
+  <!-- *ngFor="item of orderItems" not being taken for below div -->
+  <!-- error appears saying 'not known property of div'. All necessary -->
+  <!-- modules have been imported in @ngModule -->
   <div class="contents">
-
+    <div class="singleItem">
+      <div class="itemName">
+        <!-- {{item.name}} -->
+      </div>
+      <div class="itemCost">
+        <!-- {{item.price}} -->
+      </div>
+    </div>
   </div>
+
 </div>

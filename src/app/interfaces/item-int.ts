@@ -1,5 +1,5 @@
 export interface ItemInt {
-    name: string;
-    price: number;
-    instruct: string;
+    name: string,
+    price: number,
+    instruct: string
 }

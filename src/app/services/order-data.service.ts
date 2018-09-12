@@ -7,7 +7,13 @@ import { ItemInt } from '../interfaces/item-int';
 })
 export class OrderDataService {
 
-  constructor() {}
+  constructor() {
+    this.addOrder([{    
+      name: "Salad",
+      price: 10.99,
+      instruct: "No onions."
+    }], false);
+  }
 
   currDate: number;
   orderCount: number = 1;
