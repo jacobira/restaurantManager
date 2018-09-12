@@ -11,11 +11,11 @@ export class OrderDataService {
     this.addOrder([{    
       name: "Salad",
       price: 10.99,
-      instruct: "No onions."
+      instruct: "EXAMPLE"
     }], false);
   }
 
-  currDate: number;
+  currDate: number = 10119;
   orderCount: number = 1;
   orders: OrderInt[] = [];
 

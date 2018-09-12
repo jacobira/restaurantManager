@@ -9,10 +9,11 @@ import { OrderDataService } from '../services/order-data.service';
 export class OrderComponent implements OnInit {
   @Input() orderNum;
   @Input() items;
-  constructor(private _orderData: OrderDataService) { }
 
-  orderNumber = this.orderNum;
-  orderItems = this.items;
+  constructor(private _orderData: OrderDataService) { 
+    
+  }
+
 
   ngOnInit() {
   }
