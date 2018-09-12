@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OrderDataService } from '../services/order-data.service';
 
 @Component({
   selector: 'app-kitchen',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KitchenComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _orderData: OrderDataService) { }
 
   ngOnInit() {
   }
 
+  //orders is a map of keys and values from the service's orders prop
+  orders = this._orderData.orders;
 }

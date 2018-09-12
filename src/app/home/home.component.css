@@ -1,0 +1,38 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .selectorContainer {
+    height: 400px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .selectorContainer a {
+    text-decoration: none;
+}
+.container .selectorContainer .screenSelector {
+    height: 400px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+}
+.container .selectorContainer #kitchen {
+    background-color: lightblue;
+}
+.container .selectorContainer #orderEntry {
+    background-color: lightcoral;
+}
+.container .selectorContainer #payment {
+    background-color: lightgreen;
+}
+.container .selectorContainer .screenSelector .selectorTitle {
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;
+}
